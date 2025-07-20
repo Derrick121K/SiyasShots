@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siya's Shots | Professional Photo & Video Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Siya's Shots Logo">
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInUp">
+                <h1>Capturing Your <span>Special Moments</span></h1>
+                <p>Professional photography and videography services for weddings, events, portraits, and more.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Book a Session</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles-js"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>We offer a range of professional photography and videography services</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate__animated animate__fadeIn">
+                    <div class="service-icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <h3>Portrait Photography</h3>
+                    <p>Beautifully captured portraits for individuals, families, and professionals.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate__animated animate__fadeIn" data-wow-delay="0.2s">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Wedding Photography</h3>
+                    <p>Capture your special day with our elegant and timeless wedding photography.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate__animated animate__fadeIn" data-wow-delay="0.4s">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Production</h3>
+                    <p>High-quality video services for events, commercials, and special occasions.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate__animated animate__fadeIn" data-wow-delay="0.6s">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Event Coverage</h3>
+                    <p>Professional coverage for corporate events, parties, and special occasions.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>Explore our recent work</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="event">Event</button>
+                <button class="filter-btn" data-filter="video">Video</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item wedding">
+                    <img src="assets/sample-work/wedding1.jpg" alt="Wedding Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Wedding Photography</h3>
+                        <p>Elegant moments captured</p>
+                        <a href="assets/sample-work/wedding1.jpg" class="portfolio-zoom" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item portrait">
+                    <img src="assets/sample-work/portrait1.jpg" alt="Portrait Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Portrait Session</h3>
+                        <p>Professional headshots</p>
+                        <a href="assets/sample-work/portrait1.jpg" class="portfolio-zoom" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item event">
+                    <img src="assets/sample-work/event1.jpg" alt="Event Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Event</h3>
+                        <p>Annual company gathering</p>
+                        <a href="assets/sample-work/event1.jpg" class="portfolio-zoom" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item video">
+                    <img src="assets/sample-work/video1.jpg" alt="Video Production">
+                    <div class="portfolio-overlay">
+                        <h3>Commercial Video</h3>
+                        <p>Product promotion film</p>
+                        <a href="assets/sample-work/video1.jpg" class="portfolio-zoom" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item wedding">
+                    <img src="assets/sample-work/wedding2.jpg" alt="Wedding Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Wedding Day</h3>
+                        <p>Bridal preparation</p>
+                        <a href="assets/sample-work/wedding2.jpg" class="portfolio-zoom" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item portrait">
+                    <img src="assets/sample-work/portrait2.jpg" alt="Portrait Photography">
+                    <div class="portfolio-overlay">
+                        <h3>Family Portrait</h3>
+                        <p>Generations together</p>
+                        <a href="assets/sample-work/portrait2.jpg" class="portfolio-zoom" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="#contact" class="btn btn-primary">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate__animated animate__fadeInLeft">
+                    <div class="section-header">
+                        <h2>About Us</h2>
+                        <p>Our story and passion for photography</p>
+                    </div>
+                    <p>Founded in 2018, Siya's Shots has been dedicated to providing exceptional photography and videography services to clients across the region. Our team of talented professionals is passionate about capturing life's most precious moments.</p>
+                    <p>We believe in creating authentic, beautiful imagery that tells your unique story. With state-of-the-art equipment and a creative eye, we deliver results that exceed expectations.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>200+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1000+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                </div>
+                <div class="about-image animate__animated animate__fadeInRight">
+                    <div class="image-frame">
+                        <img src="assets/images/about.jpg" alt="Our Team">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about us</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Siya's Shots did an amazing job with our wedding photos. They captured every special moment beautifully and delivered beyond our expectations.</p>
+                        <div class="client-info">
+                            <img src="assets/images/client1.jpg" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>Wedding Client</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>The corporate event coverage was professional and high-quality. The team was easy to work with and delivered the photos quickly.</p>
+                        <div class="client-info">
+                            <img src="assets/images/client2.jpg" alt="Michael Chen">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <span>Corporate Client</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Our family portraits turned out absolutely stunning! The photographer made us feel comfortable and the results were natural and beautiful.</p>
+                        <div class="client-info">
+                            <img src="assets/images/client3.jpg" alt="The Williams Family">
+                            <div>
+                                <h4>The Williams Family</h4>
+                                <span>Portrait Clients</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-feed">
+        <div class="container">
+            <div class="section-header">
+                <h2>Follow Our Work</h2>
+                <p>@siyasshots on Instagram</p>
+            </div>
+            <div class="instagram-grid">
+                <a href="#" class="instagram-item">
+                    <img src="assets/sample-work/portrait1.jpg" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="assets/sample-work/wedding1.jpg" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="assets/sample-work/event1.jpg" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="assets/sample-work/video1.jpg" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch to book your session</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info animate__animated animate__fadeInLeft">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Address</h4>
+                            <p>123 Photography Ave, Studio City, CA 91604</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Phone</h4>
+                            <p>(+27) 79-110-8212</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Email</h4>
+                            <p>info@siyasshots.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9am - 6pm</p>
+                            <p>Saturday: 10am - 4pm</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form animate__animated animate__fadeInRight">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="">Select Service</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="portrait">Portrait Photography</option>
+                                <option value="event">Event Coverage</option>
+                                <option value="video">Video Production</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="assets/logo.png" alt="Siya's Shots Logo" class="footer-logo">
+                    <p>Professional photography and videography services to capture your special moments.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100064165717211"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Wedding Photography</a></li>
+                        <li><a href="#">Portrait Sessions</a></li>
+                        <li><a href="#">Event Coverage</a></li>
+                        <li><a href="#">Video Production</a></li>
+                        <li><a href="#">Commercial Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and promotions.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Siya's Shots. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
